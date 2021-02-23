@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreWebApplicationWithPageBuilder", "CoreWebApplicationWithPageBuilder\CoreWebApplicationWithPageBuilder.csproj", "{EFE8E017-0B6A-414F-9E3F-7BA2922761F2}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DomainLayer", "DomainLayer\DomainLayer.shproj", "{82C160E2-27D1-4BF9-870E-F23B351AD1F6}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AuthNAuthZ", "AuthNAuthZ\AuthNAuthZ.shproj", "{C6E728D1-438D-4D03-8766-355B78ECAC93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreAuthenticationProvider", "CoreAuthenticationProvider\CoreAuthenticationProvider.csproj", "{26200BFF-D381-48EB-B5F8-8FC211668912}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SharedServices", "SharedServices\SharedServices.shproj", "{96E71BDA-3F5F-4C33-BCC5-2FEAB6F17647}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		AuthNAuthZ\AuthNAuthZ.projitems*{26200bff-d381-48eb-b5f8-8fc211668912}*SharedItemsImports = 5
+		DomainLayer\DomainLayer.projitems*{26200bff-d381-48eb-b5f8-8fc211668912}*SharedItemsImports = 5
+		SharedServices\SharedServices.projitems*{26200bff-d381-48eb-b5f8-8fc211668912}*SharedItemsImports = 5
+		DomainLayer\DomainLayer.projitems*{82c160e2-27d1-4bf9-870e-f23b351ad1f6}*SharedItemsImports = 13
+		SharedServices\SharedServices.projitems*{96e71bda-3f5f-4c33-bcc5-2feab6f17647}*SharedItemsImports = 13
+		AuthNAuthZ\AuthNAuthZ.projitems*{c6e728d1-438d-4d03-8766-355b78ecac93}*SharedItemsImports = 13
+		AuthNAuthZ\AuthNAuthZ.projitems*{efe8e017-0b6a-414f-9e3f-7ba2922761f2}*SharedItemsImports = 5
+		DomainLayer\DomainLayer.projitems*{efe8e017-0b6a-414f-9e3f-7ba2922761f2}*SharedItemsImports = 5
+		SharedServices\SharedServices.projitems*{efe8e017-0b6a-414f-9e3f-7ba2922761f2}*SharedItemsImports = 5
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFE8E017-0B6A-414F-9E3F-7BA2922761F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFE8E017-0B6A-414F-9E3F-7BA2922761F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFE8E017-0B6A-414F-9E3F-7BA2922761F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFE8E017-0B6A-414F-9E3F-7BA2922761F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26200BFF-D381-48EB-B5F8-8FC211668912}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26200BFF-D381-48EB-B5F8-8FC211668912}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26200BFF-D381-48EB-B5F8-8FC211668912}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26200BFF-D381-48EB-B5F8-8FC211668912}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B050BA62-AF52-4D52-BE13-A589F4017974}
+	EndGlobalSection
+EndGlobal

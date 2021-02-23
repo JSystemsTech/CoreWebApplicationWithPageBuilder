@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1>Login</h1>
+@Html.ActionLink("", "AuthenticatedPage", "Home", new { }, new { @id="RedirectLink"})
+
+@section Scripts{ 
+<script type="text/javascript">
+    $('#RedirectLink')[0].click();
+</script>
+}

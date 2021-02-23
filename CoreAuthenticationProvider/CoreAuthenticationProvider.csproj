@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DbFacade.Core" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <Import Project="..\SharedServices\SharedServices.projitems" Label="Shared" />
+
+  <Import Project="..\DomainLayer\DomainLayer.projitems" Label="Shared" />
+
+  <Import Project="..\AuthNAuthZ\AuthNAuthZ.projitems" Label="Shared" />
+
+</Project>

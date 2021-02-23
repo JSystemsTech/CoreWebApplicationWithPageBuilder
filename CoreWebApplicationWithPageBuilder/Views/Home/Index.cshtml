@@ -1,0 +1,39 @@
+﻿@model IndexViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Roles</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var user in Model.Users)
+        {
+        <tr>
+            <td>@user.Name</td>
+            <td>
+                @foreach (var role in user.Roles)
+                {
+                    <span class="badge badge-primary mr-1">@role</span>
+                }
+            </td>
+            <td>
+                <form action="/Home/TestUserLogin", method="post">
+                    @Html.AntiForgeryToken()
+                    @Html.Hidden("UserGuid", user.Guid, new { id= "UserGuid" + user.Guid})
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

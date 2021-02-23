@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>c6e728d1-438d-4d03-8766-355b78ecac93</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>AuthNAuthZ</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AuthenticationHandlers\TokenAuthenticationHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EncryptionProvider\EncryptionProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\AuthNAuthZConfigurationExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TokenProvider\Saml2TokenHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TokenProvider\TokenHandler.cs" />
+  </ItemGroup>
+</Project>
